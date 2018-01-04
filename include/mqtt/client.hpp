@@ -235,8 +235,8 @@ public:
      * After connecting, the broker starts counting a timeout, and the endpoint starts
      * sending ping packets for each ping_ms.
      * When the broker receives a ping packet, timeout timer is reset.
-     * If the broker doesn't receive a ping packet within keep_alive_sec, the endpoint
-     * is disconnected.<BR>
+     * If the broker doesn't receive a control packet within one and a half times the keep_alive_sec, 
+     * the endpoint is disconnected.<BR>
      * See http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html#_Toc398718030<BR>
      * 3.1.2.10 Keep Alive
      */
